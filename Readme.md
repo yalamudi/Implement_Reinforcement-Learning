@@ -16,11 +16,14 @@ Install Stable-Baselines3: There are certain algorithms that are available we ca
 Applying Vectorization: we are going to stack our frame using VecFrameStack(env, 4, channels_order='last')
 
 Training Reinforcement model: We are going to use Proximal Policy Optimization algorithm. Firstly we import those dependencies and then we are going to have a sample code that actually allows you to save models as you're training them so you can actually go back through and see the different models that you've actually gone and built so let's go ahead and do this and we'll be able to import our dependencies.
-# Import os for file path management
+
+#Import os for file path management 
 import os 
-# Import PPO for algos
+
+#Import PPO for algos 
 from stable_baselines3 import PPO
-# Import Base Callback for saving models
+
+#Import Base Callback for saving models
 from stable_baselines3.common.callbacks import BaseCallback
 In the code we have class TrainAndLoggingCallback(BaseCallback) where you can find cod eto tain our model.
 
