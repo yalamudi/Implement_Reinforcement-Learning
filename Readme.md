@@ -17,13 +17,13 @@ Applying Vectorization: we are going to stack our frame using VecFrameStack(env,
 
 Training Reinforcement model: We are going to use Proximal Policy Optimization algorithm. Firstly we import those dependencies and then we are going to have a sample code that actually allows you to save models as you're training them so you can actually go back through and see the different models that you've actually gone and built so let's go ahead and do this and we'll be able to import our dependencies.
 
-#Import os for file path management 
+#Import os for file path management :
 import os 
 
-#Import PPO for algos 
+#Import PPO for algos :
 from stable_baselines3 import PPO
 
-#Import Base Callback for saving models
+#Import Base Callback for saving models :
 from stable_baselines3.common.callbacks import BaseCallback
 In the code we have class TrainAndLoggingCallback(BaseCallback) where you can find cod eto tain our model.
 
@@ -31,5 +31,7 @@ Finally Testing:
 Now we are going to test first we are going to load our model from memory so say for example we stop this training or we shut down this notebook we want to be able to reload it from a file rather than relying on the model that we've got in memory so we can do this so in order to do that we can use model.load or the actual ppo.load method.
 According to code: We are going to train our model and implement that trained model in the code as per quoted.
 
-Finally our code when we run it output will be opened in a new window.
+Finally our code when we run it output will be opened in a new window as shown in the below picture.
+
+<img width="286" alt="image" src="https://user-images.githubusercontent.com/42296536/207493951-19138e15-5b97-459c-ba4d-45431bf337dc.png">
 
